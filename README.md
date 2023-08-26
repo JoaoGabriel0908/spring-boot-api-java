@@ -39,15 +39,15 @@ Tecnologias usadas no projeto
 
 ### 2 - End-Point de Médico e Paciente
 
-![End-Point de Paciente e Médico](https://github.com/JoaoGabriel0908/spring-boot-api-java/blob/main/readme/paciente-medico-controller.png)
+<img src='https://github.com/JoaoGabriel0908/spring-boot-api-java/blob/main/readme/paciente-medico-controller.png' width="50%"></img>
 
 ### 3 - End-Point de Consultas
 
-![End-Point de Consultas](https://github.com/JoaoGabriel0908/spring-boot-api-java/blob/main/readme/paciente-medico-controller.png)
+<img src='https://github.com/JoaoGabriel0908/spring-boot-api-java/blob/main/readme/paciente-medico-controller.png' width="50%"></img>
 
 ### 4 - End-Point para Autenticar
 
-![Autenticação](https://github.com/JoaoGabriel0908/spring-boot-api-java/blob/main/readme/autentica%C3%A7%C3%A3o-controller.png)
+<img src='https://github.com/JoaoGabriel0908/spring-boot-api-java/blob/main/readme/autentica%C3%A7%C3%A3o-controller.png' width="50%"></img>
 
 ## Links
   - Deploy em andamento
