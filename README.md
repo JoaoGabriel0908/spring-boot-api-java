@@ -1,5 +1,5 @@
 
-![Logo of the project] <img src='https://github.com/JoaoGabriel0908/spring-boot-api-java/blob/main/readme/logoClinica.png'></img>
+<img src='https://github.com/JoaoGabriel0908/spring-boot-api-java/blob/main/readme/logoClinica.png' height="150px" width="150px"></img>
 
 
 ## Clinica Spring Boot
@@ -34,8 +34,8 @@ Tecnologias usadas no projeto
 
 ### 1 - Documentação do Projeto
 
-![Doc Imagem](https://github.com/JoaoGabriel0908/spring-boot-api-java/blob/main/readme/SpringBoot.png)
-![Postman](https://github.com/JoaoGabriel0908/spring-boot-api-java/blob/main/readme/postman.png)
+<img src='https://github.com/JoaoGabriel0908/spring-boot-api-java/blob/main/readme/SpringBoot.png' height="150px" width="150px"></img>
+<img src='https://github.com/JoaoGabriel0908/spring-boot-api-java/blob/main/readme/postman.png' height="150px" width="150px"></img>
 
 ### 2 - End-Point de Médico e Paciente
 
