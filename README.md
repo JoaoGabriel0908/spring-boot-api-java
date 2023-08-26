@@ -59,7 +59,7 @@ Tecnologias usadas no projeto
 
   ## Authors
 
-  * **Lucas Siqueira Fernandes** 
+  * **João Gabriel Costa** 
 
   Please follow github and join us!
   Thanks to visiting me and good coding!
