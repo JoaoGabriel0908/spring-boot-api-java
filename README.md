@@ -1,5 +1,5 @@
 
-![Logo of the project](https://github.com/JoaoGabriel0908/spring-boot-api-java/blob/main/readme/logoClinica.png)
+![Logo of the project] <img src='https://github.com/JoaoGabriel0908/spring-boot-api-java/blob/main/readme/logoClinica.png'></img>
 
 
 ## Clinica Spring Boot
