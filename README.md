@@ -3,8 +3,8 @@
 
 
 ## Clinica Spring Boot
-Projeto realizado para a clinica Spring Boot, que deseja realizar agendamentos de consultas com seus pacientes.
-Projeto realizado em ambiente acadêmico.
+Projeto realizado para a clinica Spring Boot, que possibilita o paciente agendar escolhendo seu horário e o médico.
+Realizado em ambiente acadêmico.
 
 ## Tecnologias 
 
