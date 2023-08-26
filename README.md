@@ -34,8 +34,8 @@ Tecnologias usadas no projeto
 
 ### 1 - Documentação do Projeto
 
-<img src='https://github.com/JoaoGabriel0908/spring-boot-api-java/blob/main/readme/SpringBoot.png' height="150px" width="150px"></img>
-<img src='https://github.com/JoaoGabriel0908/spring-boot-api-java/blob/main/readme/postman.png' height="150px" width="150px"></img>
+<img src='https://github.com/JoaoGabriel0908/spring-boot-api-java/blob/main/readme/SpringBoot.png' width="50%"></img>
+<img src='https://github.com/JoaoGabriel0908/spring-boot-api-java/blob/main/readme/postman.png' width="50%"></img>
 
 ### 2 - End-Point de Médico e Paciente
 
