@@ -15,8 +15,6 @@ import med.voll.api.domain.endereco.Endereco;
 @Table(name = "pacientes")
 @Entity(name = "pacientes")
 @Getter
-@NoArgsConstructor
-@AllArgsConstructor
 @EqualsAndHashCode(of = "id")
 public class Paciente {
 	public Paciente(DadosCadastroPaciente dados) {
@@ -29,7 +27,7 @@ public class Paciente {
 	}
 	
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+	private Long id;
 	private boolean ativo;
 	private String nome;
 	private String email;

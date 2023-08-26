@@ -1,0 +1,1 @@
+alter table consultas add ativo column motivo_cancelamento varchar(100);

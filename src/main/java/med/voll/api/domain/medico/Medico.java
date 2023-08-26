@@ -13,8 +13,6 @@ import med.voll.api.domain.endereco.Endereco;
 @Table(name = "medicos")
 @Entity(name = "medicos")
 @Getter
-@NoArgsConstructor
-@AllArgsConstructor
 @EqualsAndHashCode(of = "id")
 public class Medico {
 	
@@ -48,6 +46,7 @@ private String email;
 private String crm;
 private String telefone;
 private boolean ativo;
+
 //	Anotação Embedded, indica uma classe separada mas que fica na mesma tabela do Medico
 @Embedded
 private Endereco endereco;

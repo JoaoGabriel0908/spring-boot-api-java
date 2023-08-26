@@ -1,0 +1,115 @@
+package com.fleet.mappers;
+
+import com.fleet.domain.Equipamento;
+import com.fleet.domain.LogIdentificadorMotorista;
+import com.fleet.dto.LogIdentificadorMotoristaDTO;
+import java.util.ArrayList;
+import java.util.List;
+import javax.annotation.processing.Generated;
+import org.springframework.stereotype.Component;
+
+@Generated(
+    value = "org.mapstruct.ap.MappingProcessor",
+    date = "2023-07-31T22:52:24-0300",
+    comments = "version: 1.3.1.Final, compiler: Eclipse JDT (IDE) 3.33.0.v20230218-1114, environment: Java 17.0.6 (Eclipse Adoptium)"
+)
+@Component
+public class LogIdentificadorMotoristaMapperImpl implements LogIdentificadorMotoristaMapper {
+
+    @Override
+    public LogIdentificadorMotoristaDTO logIdentificadorMotoristaDTOToLogIdentificaodrMotorista(LogIdentificadorMotorista logIdentificadorMotorista) {
+        if ( logIdentificadorMotorista == null ) {
+            return null;
+        }
+
+        LogIdentificadorMotoristaDTO logIdentificadorMotoristaDTO = new LogIdentificadorMotoristaDTO();
+
+        logIdentificadorMotoristaDTO.setEquipamentoId( logIdentificadorMotoristaEquipamentoId( logIdentificadorMotorista ) );
+        logIdentificadorMotoristaDTO.setDh( logIdentificadorMotorista.getDh() );
+        logIdentificadorMotoristaDTO.setDhEnviado( logIdentificadorMotorista.getDhEnviado() );
+        logIdentificadorMotoristaDTO.setChave( logIdentificadorMotorista.getChave() );
+        logIdentificadorMotoristaDTO.setIndex( logIdentificadorMotorista.getIndex() );
+        logIdentificadorMotoristaDTO.setId( logIdentificadorMotorista.getId() );
+        logIdentificadorMotoristaDTO.setUuid( logIdentificadorMotorista.getUuid() );
+        logIdentificadorMotoristaDTO.setState( logIdentificadorMotorista.getState() );
+        logIdentificadorMotoristaDTO.setStatusDsc( logIdentificadorMotorista.getStatusDsc() );
+
+        return logIdentificadorMotoristaDTO;
+    }
+
+    @Override
+    public List<LogIdentificadorMotoristaDTO> lstLogIdentificadorMotoristaDTOToLstLogIdentificaodrMotorista(List<LogIdentificadorMotorista> logIdentificadorMotorista) {
+        if ( logIdentificadorMotorista == null ) {
+            return null;
+        }
+
+        List<LogIdentificadorMotoristaDTO> list = new ArrayList<LogIdentificadorMotoristaDTO>( logIdentificadorMotorista.size() );
+        for ( LogIdentificadorMotorista logIdentificadorMotorista1 : logIdentificadorMotorista ) {
+            list.add( logIdentificadorMotoristaDTOToLogIdentificaodrMotorista( logIdentificadorMotorista1 ) );
+        }
+
+        return list;
+    }
+
+    @Override
+    public LogIdentificadorMotorista logIdentificadorMotoristaToLogIdentificaodrMotoristaDTO(LogIdentificadorMotoristaDTO logIdentificadorMotorista) {
+        if ( logIdentificadorMotorista == null ) {
+            return null;
+        }
+
+        LogIdentificadorMotorista logIdentificadorMotorista1 = new LogIdentificadorMotorista();
+
+        logIdentificadorMotorista1.setEquipamento( logIdentificadorMotoristaDTOToEquipamento( logIdentificadorMotorista ) );
+        logIdentificadorMotorista1.setDh( logIdentificadorMotorista.getDh() );
+        logIdentificadorMotorista1.setDhEnviado( logIdentificadorMotorista.getDhEnviado() );
+        logIdentificadorMotorista1.setChave( logIdentificadorMotorista.getChave() );
+        logIdentificadorMotorista1.setIndex( logIdentificadorMotorista.getIndex() );
+        logIdentificadorMotorista1.setId( logIdentificadorMotorista.getId() );
+        logIdentificadorMotorista1.setUuid( logIdentificadorMotorista.getUuid() );
+        logIdentificadorMotorista1.setState( logIdentificadorMotorista.getState() );
+        logIdentificadorMotorista1.setStatusDsc( logIdentificadorMotorista.getStatusDsc() );
+
+        return logIdentificadorMotorista1;
+    }
+
+    @Override
+    public List<LogIdentificadorMotorista> lstLogIdentificadorMotoristaToLstLogIdentificaodrMotoristaDTO(List<LogIdentificadorMotoristaDTO> logIdentificadorMotorista) {
+        if ( logIdentificadorMotorista == null ) {
+            return null;
+        }
+
+        List<LogIdentificadorMotorista> list = new ArrayList<LogIdentificadorMotorista>( logIdentificadorMotorista.size() );
+        for ( LogIdentificadorMotoristaDTO logIdentificadorMotoristaDTO : logIdentificadorMotorista ) {
+            list.add( logIdentificadorMotoristaToLogIdentificaodrMotoristaDTO( logIdentificadorMotoristaDTO ) );
+        }
+
+        return list;
+    }
+
+    private Integer logIdentificadorMotoristaEquipamentoId(LogIdentificadorMotorista logIdentificadorMotorista) {
+        if ( logIdentificadorMotorista == null ) {
+            return null;
+        }
+        Equipamento equipamento = logIdentificadorMotorista.getEquipamento();
+        if ( equipamento == null ) {
+            return null;
+        }
+        Integer id = equipamento.getId();
+        if ( id == null ) {
+            return null;
+        }
+        return id;
+    }
+
+    protected Equipamento logIdentificadorMotoristaDTOToEquipamento(LogIdentificadorMotoristaDTO logIdentificadorMotoristaDTO) {
+        if ( logIdentificadorMotoristaDTO == null ) {
+            return null;
+        }
+
+        Equipamento equipamento = new Equipamento();
+
+        equipamento.setId( logIdentificadorMotoristaDTO.getEquipamentoId() );
+
+        return equipamento;
+    }
+}

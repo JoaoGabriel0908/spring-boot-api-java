@@ -16,9 +16,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
 import med.voll.api.domain.medico.DadosAtualizacaoMedico;
 import med.voll.api.domain.medico.DadosCadastroMedicos;
+import med.voll.api.domain.medico.DadosDetalhementoMedico;
 import med.voll.api.domain.medico.DadosListagemMedico;
 import med.voll.api.domain.medico.Medico;
 import med.voll.api.domain.medico.MedicoRepository;
@@ -28,11 +30,16 @@ import java.util.*;
 //Classe de controller Rest durante a inicialização do projeto
 @RequestMapping("/medico")
 @RestController
+@SecurityRequirement(name = "bearer-key")
 public class MedicoController {
+	
+//	Classe para padronizar os Retornos: RESPONSEENTITY
+	
 	
 //	Injetando automáticamente o repositório e instanciar o repositório dentro da classe
 	@Autowired
 	private MedicoRepository medicoRepository;
+	
 	
 //	Colocando o método Post e Colocando a requisição no corpo do post
 	@PostMapping
@@ -79,6 +86,7 @@ public class MedicoController {
 //		Retornando resposta para o método
 		return ResponseEntity.noContent().build();
 	}
+	
 	
 //	Pegando o id pela URL
 	@GetMapping("/{id}")

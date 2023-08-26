@@ -1,6 +1,9 @@
 package med.voll.api.domain.endereco;
 
 import jakarta.persistence.Embeddable;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -8,11 +11,8 @@ import lombok.NoArgsConstructor;
 
 //Classe JPA, classe responsável pela comunicação com o banco de dados
 @Getter
-@NoArgsConstructor
-@AllArgsConstructor
-@EqualsAndHashCode(of = "id")
-
 @Embeddable
+@EqualsAndHashCode(of = "id")
 public class Endereco {
 	
 	public Endereco() {}
@@ -36,6 +36,7 @@ public class Endereco {
 		return bairro;
 	}
 
+	
 	public void setBairro(String bairro) {
 		this.bairro = bairro;
 	}
